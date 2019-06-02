@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: RandomKnowledge
+  m_EditorClassIdentifier: 
+  FeatureID: 19
+  FeatureConditions:
+  - {fileID: 11400000, guid: 1a791445aa3ad5c43b7284e91659bbff, type: 2}
+  FeatureTiming: 17
+  FeatureType: 3
+  Target: Anything you have line of sight to, or an idea or phrase you just heard
+    about from any source.
+  Trigger: 
+  FeatureEffect: Roll d20 and add your SATK and SDEF modifiers to the roll. If you
+    roll higher than 14, you know about the thing you targeted. If you are targeting
+    a Pokemon, you must have already targeted the Pokemon with a Pokedex.
+  SelectedFeatureCollection: 0

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: AceTrainer
+  m_EditorClassIdentifier: 
+  FeatureID: 100
+  FeatureConditions:
+  - {fileID: 11400000, guid: 539547c3d4f0b0d44aaf1129394cea93, type: 2}
+  - {fileID: 11400000, guid: 5b62f36f07907b5478c4bd72884e49fd, type: 2}
+  FeatureTiming: 5
+  FeatureType: 4
+  Target: 
+  Trigger: 
+  FeatureEffect: 'Pick 3 Skills: Bluff/Diplomacy, Browbeat, Concentration, History,
+    Investigate, Sprint, Streetwise, Tireless'
+  SelectedFeatureCollection: 0

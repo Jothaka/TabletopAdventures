@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: DualWielding
+  m_EditorClassIdentifier: 
+  FeatureID: 5
+  FeatureConditions:
+  - {fileID: 11400000, guid: 9faea071df9401547963dc4274d96372, type: 2}
+  - {fileID: 11400000, guid: 766b0d55aa163074898c2633f516a532, type: 2}
+  - {fileID: 11400000, guid: 57c2598b8d4032e4b986703962d26f6d, type: 2}
+  - {fileID: 11400000, guid: 2c07bfeb186c9104581c845b407de81f, type: 2}
+  - {fileID: 11400000, guid: 9899bc378e74e8c43bf4a274f400686e, type: 2}
+  - {fileID: 11400000, guid: 2211d4824c14454458e3d5157b4990b1, type: 2}
+  - {fileID: 11400000, guid: ced66f8ac9be7b84a8a965d0d3224b1e, type: 2}
+  FeatureTiming: 5
+  FeatureType: 0
+  Target: 
+  Trigger: 
+  FeatureEffect: You may control 2 Pokemon at the same time. During a round of battle,
+    they are each included in the battle queue. You are still only allotted 1 Trainer
+    Action. During a round in which you use Dual Wielding, you may not use the effects
+    of Multitasking.
+  SelectedFeatureCollection: 0
