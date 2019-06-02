@@ -6,7 +6,7 @@ public class FeatureCondition : Condition
     public int FeatureID;
 
     [HideInInspector]
-    public int SelectedFeatureCollection;
+    public FeatureClasses FeatureClass;
 
     public override bool TrainerMeetsCondition(Trainer trainer)
     {

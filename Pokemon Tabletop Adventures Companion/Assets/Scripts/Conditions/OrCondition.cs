@@ -4,7 +4,7 @@ using System.Collections.Generic;
 [Serializable]
 public class OrCondition : Condition
 {
-    public List<Condition> ConditionsToCheck;
+    public List<Condition> ConditionsToCheck = new List<Condition>();
 
     public override bool TrainerMeetsCondition(Trainer trainer)
     {

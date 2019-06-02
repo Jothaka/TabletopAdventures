@@ -15,7 +15,7 @@ public class FeatureEditor : Editor
     private Type[] featureCollections;
     private string[] featureCollectionNames;
 
-    private int selectedFeatureCollection;
+    private FeatureClasses selectedFeatureClass;
     private int selectedFeatureID;
 
     private List<FieldInfo> selectedConstants;
@@ -35,9 +35,9 @@ public class FeatureEditor : Editor
     {
         featureCollections = ReflectionUtility.GetAllSubTypes(typeof(FeatureCollection));
         featureCollectionNames = ReflectionUtility.GetTypeNames(featureCollections);
-        selectedFeatureCollection = feature.SelectedFeatureCollection;
+        selectedFeatureClass = feature.FeatureClass;
 
-        selectedConstants = ReflectionUtility.GetConstants(featureCollections[selectedFeatureCollection]);
+        selectedConstants = ReflectionUtility.GetConstants(FeatureCollection.FeatureClassToCollectionType(selectedFeatureClass));
         selectedConstantNames = ReflectionUtility.GetFieldNames(selectedConstants);
         var constantValues = ReflectionUtility.GetFieldConstantValues<int>(selectedConstants);
         selectedFeatureID = constantValues.IndexOf(feature.FeatureID);
@@ -66,14 +66,15 @@ public class FeatureEditor : Editor
 
     private void OnDrawSelectFeatureID()
     {
-        int oldSelected = selectedFeatureCollection;
+        FeatureClasses oldSelected = selectedFeatureClass;
 
-        selectedFeatureCollection = EditorGUILayout.Popup("Feature Type", selectedFeatureCollection, featureCollectionNames);
+        selectedFeatureClass = (FeatureClasses)EditorGUILayout.EnumPopup("Feature Class", selectedFeatureClass); //EditorGUILayout.Popup("Feature Class", selectedFeatureClass, featureCollectionNames);
 
-        if (oldSelected != selectedFeatureCollection)
+        if (oldSelected != selectedFeatureClass)
         {
-            selectedConstants = ReflectionUtility.GetConstants(featureCollections[selectedFeatureCollection]);
+            selectedConstants = ReflectionUtility.GetConstants(FeatureCollection.FeatureClassToCollectionType(selectedFeatureClass));
             selectedConstantNames = ReflectionUtility.GetFieldNames(selectedConstants);
+            feature.FeatureClass = selectedFeatureClass;
         }
 
         int oldFeatureID = selectedFeatureID;

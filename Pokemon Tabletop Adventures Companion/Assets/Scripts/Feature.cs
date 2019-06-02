@@ -17,7 +17,8 @@ public class Feature : ScriptableObject
     public string FeatureEffect;
 
     [HideInInspector]
-    public int SelectedFeatureCollection;
+    //public int SelectedFeatureCollection;
+    public FeatureClasses FeatureClass;
 
     public bool TrainerMeetsCondition(Trainer trainer)
     {
