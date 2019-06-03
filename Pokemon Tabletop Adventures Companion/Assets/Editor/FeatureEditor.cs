@@ -60,7 +60,6 @@ public class FeatureEditor : Editor
 
         base.OnInspectorGUI();
         OnDrawSelectFeatureID();
-        feature.FeatureTiming = (FeatureTiming)EditorGUILayout.EnumPopup("Feature Timing", feature.FeatureTiming);
         OnDrawFeatureConditions();
     }
 
@@ -75,13 +74,23 @@ public class FeatureEditor : Editor
             selectedConstants = ReflectionUtility.GetConstants(FeatureCollection.FeatureClassToCollectionType(selectedFeatureClass));
             selectedConstantNames = ReflectionUtility.GetFieldNames(selectedConstants);
             feature.FeatureClass = selectedFeatureClass;
+            EditorUtility.SetDirty(feature);
         }
 
         int oldFeatureID = selectedFeatureID;
         selectedFeatureID = EditorGUILayout.Popup("Feature Name", selectedFeatureID, selectedConstantNames);
 
         if (oldFeatureID != selectedFeatureID)
+        {
             feature.FeatureID = ReflectionUtility.GetConstantValue<int>(selectedConstants[selectedFeatureID]);
+            EditorUtility.SetDirty(feature);
+        }
+
+        var oldTiming = feature.FeatureTiming;
+
+        feature.FeatureTiming = (FeatureTiming)EditorGUILayout.EnumPopup("Feature Timing", feature.FeatureTiming);
+        if (feature.FeatureTiming != oldTiming)
+            EditorUtility.SetDirty(feature);
     }
 
     private void OnDrawFeatureConditions()

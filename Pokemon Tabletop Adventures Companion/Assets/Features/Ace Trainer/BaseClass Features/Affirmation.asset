@@ -22,4 +22,4 @@ MonoBehaviour:
   Trigger: 
   FeatureEffect: Whenever your Pokemon fells a foe or scores a critical hit, your
     Pokemon gains temporary Hit Points equal to twice your ATK modifier.
-  SelectedFeatureCollection: 0
+  FeatureClass: 1

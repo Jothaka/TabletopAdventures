@@ -15,6 +15,7 @@ MonoBehaviour:
   FeatureID: 1
   FeatureConditions:
   - {fileID: 11400000, guid: 916bce83e0c1f5846bca64ce48bd0992, type: 2}
+  FeatureTiming: 17
   FeatureType: 3
   Target: Your Pokemon targeting with a Move
   Trigger: 
@@ -22,4 +23,4 @@ MonoBehaviour:
     will deal Neutral damage to a target regardless of Resistances or Immunities.
 
     Every 4 Levels gained, you may perform this Feature another time per day.'
-  SelectedFeatureCollection: 0
+  FeatureClass: 0

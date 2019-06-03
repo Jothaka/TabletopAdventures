@@ -22,4 +22,4 @@ MonoBehaviour:
   Trigger: 
   FeatureEffect: 'Pick 3 Skills: Bluff/Diplomacy, Browbeat, Concentration, History,
     Investigate, Sprint, Streetwise, Tireless'
-  SelectedFeatureCollection: 0
+  FeatureClass: 1

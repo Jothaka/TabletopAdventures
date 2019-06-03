@@ -16,6 +16,7 @@ MonoBehaviour:
   FeatureConditions:
   - {fileID: 11400000, guid: 99356a3732936fc469c27d911f904003, type: 2}
   - {fileID: 11400000, guid: 0c0609ed67f2f744fa895fd85669bec6, type: 2}
+  FeatureTiming: 17
   FeatureType: 3
   Target: Your Pokemon targeting with a Move
   Trigger: 
@@ -24,4 +25,4 @@ MonoBehaviour:
     This Feature replaces Aim for the Horn.
 
     Every 4 Levels gained, you may perform this Feature another time per day.'
-  SelectedFeatureCollection: 0
+  FeatureClass: 0

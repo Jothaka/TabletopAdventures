@@ -15,6 +15,7 @@ MonoBehaviour:
   FeatureID: 3
   FeatureConditions:
   - {fileID: 11400000, guid: e1ec6e4fa3379344ab90c099c3a30f11, type: 2}
+  FeatureTiming: 18
   FeatureType: 3
   Target: 
   Trigger: A Trainer, not involved in a Gym or Competition battle, challenges you.
@@ -22,4 +23,4 @@ MonoBehaviour:
     10, the Trainer is intimidated and withdraws their challenge.
 
     Every 10 levels gained you may perform this Feature another time per day.'
-  SelectedFeatureCollection: 0
+  FeatureClass: 0

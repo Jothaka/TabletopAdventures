@@ -23,4 +23,4 @@ MonoBehaviour:
   FeatureEffect: Your Pokemon do not protest your commands. They cannot act disobedient
     unless they are Legendary. This doesn't affect their loyality, only wether or
     not thy do what you say to do.
-  SelectedFeatureCollection: 0
+  FeatureClass: 1
