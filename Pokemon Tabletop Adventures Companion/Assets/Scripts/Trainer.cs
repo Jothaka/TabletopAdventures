@@ -4,36 +4,25 @@ using UnityEngine;
 public class Trainer : MonoBehaviour
 {
     [Header("Stats")]
-    public int Level;
-    public int HP;
-    public int ATK;
-    public int DEF;
-    public int SATK;
-    public int SDEF;
-    public int SPD;
+    public int Level = 0;
+    public int AvailableStatPoints = 30;
+    public int AvailableFeaturePoints = 0;
+    public int HP = 6;
+    public int ATK = 6;
+    public int DEF = 6;
+    public int SATK = 6;
+    public int SDEF = 6;
+    public int SPD = 6;
 
     [Header("Achievements")]
-    public int Badges;
-    public int Medals;
-    public int ContestRibbons;
+    public int Badges = 0;
+    public int Medals = 0;
+    public int ContestRibbons = 0;
 
     [Header("Features")]
     public List<Feature> UnlockedFeatures = new List<Feature>();
 
     public int Health { get { return (HP * 4) + (Level * 4); } }
-
-   
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void SetMockupFeatures()
     {
@@ -73,7 +62,7 @@ public class Trainer : MonoBehaviour
         ATK = 11;
         DEF = 11;
         SATK = 11;
-        SDEF = 11;
-        SPD = 11;
+        SDEF = 8;
+        SPD = 14;
     }
 }

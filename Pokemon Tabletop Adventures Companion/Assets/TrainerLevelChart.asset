@@ -1,0 +1,168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc650ed09d00eb41802a52e4668474a, type: 3}
+  m_Name: TrainerLevelChart
+  m_EditorClassIdentifier: 
+  LevelChart:
+  - Level: 0
+    FeatsGained: 0
+    StatsGained: 0
+  - Level: 1
+    FeatsGained: 1
+    StatsGained: 1
+  - Level: 2
+    FeatsGained: 1
+    StatsGained: 1
+  - Level: 3
+    FeatsGained: 1
+    StatsGained: 1
+  - Level: 4
+    FeatsGained: 1
+    StatsGained: 1
+  - Level: 5
+    FeatsGained: 1
+    StatsGained: 1
+  - Level: 6
+    FeatsGained: 1
+    StatsGained: 1
+  - Level: 7
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 8
+    FeatsGained: 1
+    StatsGained: 1
+  - Level: 9
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 10
+    FeatsGained: 2
+    StatsGained: 1
+  - Level: 11
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 12
+    FeatsGained: 1
+    StatsGained: 0
+  - Level: 13
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 14
+    FeatsGained: 2
+    StatsGained: 0
+  - Level: 15
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 16
+    FeatsGained: 1
+    StatsGained: 0
+  - Level: 17
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 18
+    FeatsGained: 2
+    StatsGained: 0
+  - Level: 19
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 20
+    FeatsGained: 1
+    StatsGained: 0
+  - Level: 21
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 22
+    FeatsGained: 2
+    StatsGained: 0
+  - Level: 23
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 24
+    FeatsGained: 1
+    StatsGained: 0
+  - Level: 25
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 26
+    FeatsGained: 2
+    StatsGained: 0
+  - Level: 27
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 28
+    FeatsGained: 1
+    StatsGained: 0
+  - Level: 29
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 30
+    FeatsGained: 2
+    StatsGained: 0
+  - Level: 31
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 32
+    FeatsGained: 1
+    StatsGained: 0
+  - Level: 33
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 34
+    FeatsGained: 2
+    StatsGained: 0
+  - Level: 35
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 36
+    FeatsGained: 1
+    StatsGained: 0
+  - Level: 37
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 38
+    FeatsGained: 2
+    StatsGained: 0
+  - Level: 39
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 40
+    FeatsGained: 1
+    StatsGained: 0
+  - Level: 41
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 42
+    FeatsGained: 2
+    StatsGained: 0
+  - Level: 43
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 44
+    FeatsGained: 1
+    StatsGained: 0
+  - Level: 45
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 46
+    FeatsGained: 2
+    StatsGained: 0
+  - Level: 47
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 48
+    FeatsGained: 1
+    StatsGained: 0
+  - Level: 49
+    FeatsGained: 0
+    StatsGained: 1
+  - Level: 50
+    FeatsGained: 2
+    StatsGained: 0
