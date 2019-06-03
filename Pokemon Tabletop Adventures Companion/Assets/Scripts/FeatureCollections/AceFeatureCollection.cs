@@ -19,7 +19,7 @@
 }
 public class ChaserFeatureCollection : FeatureCollection
 {
-    //Advanced: Chaser
+    //Advanced Chaser
     public const int Chaser = 115;
     public const int NoEscape = 116;
     public const int TorrentialAssault = 117;
@@ -51,4 +51,37 @@ public class EnduringSoulFeatureCollection : FeatureCollection
     public const int Stand = 139;
     public const int StillStanding = 140;
     public const int StillStandingPlus = 141;
+}
+public class StatAceFeatureCollection: FeatureCollection
+{
+    //Advanced Stat Ace
+    public const int StatAce = 142;
+    public const int SpecialistTraining = 143;
+    public const int StatSubversion = 144;
+    public const int FixedCompetence = 145;
+    public const int PositivePress = 146;
+    public const int SpecialistTrainingPlus = 147;
+    public const int StatBoost = 148;
+    public const int StatOverflow = 149;
+    public const int StatSubversionPlus = 150;
+    public const int StatUnlock = 151;
+    public const int SuperiorAbility = 152;
+    public const int TalentScout = 153;
+}
+public class StrategiesFeatureCollection:FeatureCollection
+{
+    //Advanced Strategist
+    public const int Strategist = 154;
+    public const int FieldScout = 155;
+    public const int TerrainMastery = 156;
+    public const int AdaptiveBoost = 157;
+    public const int HeightenedPotential = 158;
+    public const int HelpfulPriorities = 159;
+    public const int HazardousIntent = 160;
+    public const int MoveRecognition = 161;
+    public const int PersonalWalls = 162;
+    public const int QuickSetUp = 163;
+    public const int TerrainTactics = 164;
+    public const int Versatility = 165;
+    public const int WeatherVortex = 166;
 }
