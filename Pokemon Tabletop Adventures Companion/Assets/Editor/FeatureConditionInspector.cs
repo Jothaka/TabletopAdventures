@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection;
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 
 [CustomEditor(typeof(FeatureCondition))]
 public class FeatureConditionInspector : Editor
 {
     private FeatureCondition featureCondition;
-    private Type[] featureCollections;
-    private string[] featureCollectionNames;
     private FeatureClasses selectedFeatureClass;
-    private List<FieldInfo> selectedConstants;
-    private string[] selectedConstantNames;
     private int selectedFeatureID;
+
+    private List<string> selectedFeatureNames;
 
     private void OnEnable()
     {
@@ -23,14 +20,13 @@ public class FeatureConditionInspector : Editor
 
     private void InitializeFeatureIDSelection()
     {
-        featureCollections = ReflectionUtility.GetAllSubTypes(typeof(FeatureCollection));
-        featureCollectionNames = ReflectionUtility.GetTypeNames(featureCollections);
         selectedFeatureClass = featureCondition.FeatureClass;
 
-        selectedConstants = ReflectionUtility.GetConstants(FeatureCollection.FeatureClassToCollectionType(selectedFeatureClass));
-        selectedConstantNames = ReflectionUtility.GetFieldNames(selectedConstants);
-        var constantValues = ReflectionUtility.GetFieldConstantValues<int>(selectedConstants);
-        selectedFeatureID = constantValues.IndexOf(featureCondition.FeatureID);
+        var classFeatures = FeatureCollection.GetClassFeatures(selectedFeatureClass);
+
+        selectedFeatureNames = classFeatures.Values.ToList();
+        var currentSelectedFeatureID = classFeatures[featureCondition.FeatureID];
+        selectedFeatureID = selectedFeatureNames.IndexOf(currentSelectedFeatureID);
     }
 
     public override void OnInspectorGUI()
@@ -50,14 +46,19 @@ public class FeatureConditionInspector : Editor
 
         if (oldSelected != selectedFeatureClass)
         {
-            selectedConstants = ReflectionUtility.GetConstants(FeatureCollection.FeatureClassToCollectionType(selectedFeatureClass));
-            selectedConstantNames = ReflectionUtility.GetFieldNames(selectedConstants);
+            var classFeatures = FeatureCollection.GetClassFeatures(selectedFeatureClass);
+            selectedFeatureNames = classFeatures.Values.ToList();
         }
 
         int oldFeatureID = selectedFeatureID;
-        selectedFeatureID = EditorGUILayout.Popup("Feature Name", selectedFeatureID, selectedConstantNames);
+        selectedFeatureID = EditorGUILayout.Popup("Feature Name", selectedFeatureID, selectedFeatureNames.ToArray());
 
         if (oldFeatureID != selectedFeatureID)
-            featureCondition.FeatureID = ReflectionUtility.GetConstantValue<int>(selectedConstants[selectedFeatureID]);
+        {
+            var featureName = selectedFeatureNames[selectedFeatureID];
+            var classFeatures = FeatureCollection.GetClassFeatures(selectedFeatureClass);
+            featureCondition.FeatureID = classFeatures.FirstOrDefault(x => x.Value == featureName).Key;
+            EditorUtility.SetDirty(featureCondition);
+        }
     }
 }
