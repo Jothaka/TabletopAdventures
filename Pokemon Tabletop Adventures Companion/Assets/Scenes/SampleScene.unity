@@ -1130,7 +1130,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1696364854}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.5
+  m_Size: 0.49999985
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2510,8 +2510,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 28106848}
   m_HandleRect: {fileID: 28106847}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.33734
+  m_Value: 0.9999999
+  m_Size: 0.33734003
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3440,6 +3440,8 @@ MonoBehaviour:
   ModifierSATK: {fileID: 1365341998}
   ModifierSDEF: {fileID: 1835031232}
   ModifierSPD: {fileID: 1970714713}
+  FeatureEffectContent: {fileID: 0}
+  FeatureButtons: []
 --- !u!1 &1197325537
 GameObject:
   m_ObjectHideFlags: 0
@@ -6421,7 +6423,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -160.85}
+  m_AnchoredPosition: {x: 0, y: -160.85005}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2036301189
@@ -6625,7 +6627,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 339926376}
   m_Direction: 0
   m_Value: 0.50000453
-  m_Size: 0.9796969
+  m_Size: 0.97969705
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

@@ -106,21 +106,7 @@ public static class FeatureCollection
             case FeatureClasses.Chaser:
                 return ChaserFeatures;
             case FeatureClasses.EnduringSoul:
-<<<<<<< HEAD
-                return typeof(EnduringSoulFeatureCollection);
-            case FeatureClasses.StatAce:
-                return typeof(StatAceFeatureCollection);
-            case FeatureClasses.Strategist:
-                return typeof(StrategistFeatureCollection);
-//            case FeatureClasses.TagBattler:
-//                return typeof(TagBattlerFeatureCollection);
-//            case FeatureClasses.TypeAce:
-//                return typeof(TypeAceFeatureCollection);
-//            case FeatureClasses.Underdog:
-//                return typeof(UnderdogFeatureCollection);
-=======
                 return EnduringSoulFeatures;
->>>>>>> 951bd724f3d1a9e4a17263e7337a2d38df250bd9
             default:
                 return new Dictionary<int, string>();
         }
