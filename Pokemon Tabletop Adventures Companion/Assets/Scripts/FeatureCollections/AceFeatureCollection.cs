@@ -68,7 +68,7 @@ public class StatAceFeatureCollection: FeatureCollection
     public const int SuperiorAbility = 152;
     public const int TalentScout = 153;
 }
-public class StrategiesFeatureCollection:FeatureCollection
+public class StrategistFeatureCollection:FeatureCollection
 {
     //Advanced Strategist
     public const int Strategist = 154;
