@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Stat Subversion +
+  m_EditorClassIdentifier: 
+  FeatureID: 150
+  FeatureConditions:
+  - {fileID: 11400000, guid: e227c3107278baf4aa5dd3ee6ecad5bd, type: 2}
+  - {fileID: 11400000, guid: 5db25576e81cf3f45829adcb4529488f, type: 2}
+  FeatureTiming: 17
+  FeatureType: 1
+  Target: "Enemy Pok\xE9mon\u2019s stat you chose Stat Ace for."
+  Trigger: 
+  FeatureEffect: "That Pok\xE9mon\u2019s stat is decreased by two Combat Stages according
+    to whichever Stat you\u2019ve chosen for Stat Ace. You may only effect one target
+    with Stat Subversion at a time, you may not change targets until the original
+    is unable to battle. This Feature replaces Stat Subversion."
+  FeatureClass: 4

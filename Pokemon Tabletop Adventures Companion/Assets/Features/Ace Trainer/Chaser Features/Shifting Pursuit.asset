@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Shifting Pursuit
+  m_EditorClassIdentifier: 
+  FeatureID: 126
+  FeatureConditions:
+  - {fileID: 11400000, guid: e13c75fae70315647a24bffb67f1aa8d, type: 2}
+  - {fileID: 11400000, guid: 71ad6ceb0fe1bff4299e73eec76bc8e1, type: 2}
+  FeatureTiming: 6
+  FeatureType: 0
+  Target: "A Pok\xE9mon or human."
+  Trigger: 
+  FeatureEffect: "When you get this feature, choose a type. When you or one of your
+    Pok\xE9mon uses the Move Pursuit, Pursuit may instead be that chosen type instead
+    of Dark. You may not change the Type once you pick the type. You may take this
+    Feature more than once to acquire multiple elemental types for Pursuit."
+  FeatureClass: 2

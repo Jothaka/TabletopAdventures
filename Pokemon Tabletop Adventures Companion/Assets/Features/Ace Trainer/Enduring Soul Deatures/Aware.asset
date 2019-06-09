@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Aware
+  m_EditorClassIdentifier: 
+  FeatureID: 132
+  FeatureConditions:
+  - {fileID: 11400000, guid: 0256f528d1c29034ab5297afc7c49521, type: 2}
+  FeatureTiming: 6
+  FeatureType: 0
+  Target: 
+  Trigger: 
+  FeatureEffect: You may sleep and have just as much awareness to sound, feeling,
+    and smell as if you are awake. You also instinctively sense danger while asleep
+    and can wake up instantly. If you have the sta-tus affliction Sleep, treat it
+    as normal non-status afflicted sleep. You do not need to make perception checks
+    with a penalty while asleep.
+  FeatureClass: 3

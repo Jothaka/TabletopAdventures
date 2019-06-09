@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Improved Attacks Z
+  m_EditorClassIdentifier: 
+  FeatureID: 110
+  FeatureConditions:
+  - {fileID: 11400000, guid: c3deffdd1b93ffa4ebc3a609864a8aef, type: 2}
+  - {fileID: 11400000, guid: b70a0e0217a319f409e15ac791992240, type: 2}
+  - {fileID: 11400000, guid: 1f36d75955fbbbd44905a0b6da1f027e, type: 2}
+  - {fileID: 11400000, guid: b24d6887b9f30ab42af00e2710e1fdc0, type: 2}
+  FeatureTiming: 5
+  FeatureType: 0
+  Target: 
+  Trigger: "Your Pok\xE9mon\u2019s damage dealing attack hits."
+  FeatureEffect: When adding up damage dealt to the foe, add your ATK modifier and
+    your SATK modifier before your foes sub-tracts their Defense or Special Defense
+    from the attack. The Feature replaces Improved Attacks +.
+  FeatureClass: 1

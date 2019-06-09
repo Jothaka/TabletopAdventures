@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Press On!
+  m_EditorClassIdentifier: 
+  FeatureID: 131
+  FeatureConditions:
+  - {fileID: 11400000, guid: 13450c9a605a92b4897d390b0bb15fb7, type: 2}
+  FeatureTiming: 5
+  FeatureType: 0
+  Target: 
+  Trigger: 
+  FeatureEffect: "Your Pok\xE9mon faint when they reach -25% HP instead of at 0 HP.
+    Pok\xE9mon cannot use the Moves Endeavor, Explosion, Flail, Pain Split, Reversal
+    or Self-destruct while they have 0 HP or less. You may still return a Pok\xE9mon
+    with 0 or less HP and send out a Pok\xE9mon in the same action. Pok\xE9mon with
+    the Soulless ability cannot benefit from Press On! This does not change when your
+    Pok\xE9mon need to make death savings throws."
+  FeatureClass: 3

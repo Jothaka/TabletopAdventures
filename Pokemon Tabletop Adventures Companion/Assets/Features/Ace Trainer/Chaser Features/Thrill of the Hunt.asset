@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Thrill of the Hunt
+  m_EditorClassIdentifier: 
+  FeatureID: 128
+  FeatureConditions:
+  - {fileID: 11400000, guid: 28177de70446fbe43bceea7f8ea4af48, type: 2}
+  FeatureTiming: 6
+  FeatureType: 0
+  Target: 
+  Trigger: 
+  FeatureEffect: "When your Pok\xE9mon pursues a foe and fells them, with Pursuit,
+    because of a Chaser feature, or in an encounter after the target has previously
+    escaped, they gain +25% the experience they would have gained."
+  FeatureClass: 2

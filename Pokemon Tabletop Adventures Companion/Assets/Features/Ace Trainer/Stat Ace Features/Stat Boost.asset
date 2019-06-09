@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Stat Boost
+  m_EditorClassIdentifier: 
+  FeatureID: 148
+  FeatureConditions:
+  - {fileID: 11400000, guid: 37f5f5c0dbd446346b6dd7babcccbd09, type: 2}
+  - {fileID: 11400000, guid: 8c978cb569574314b94a57ff6725692f, type: 2}
+  FeatureTiming: 17
+  FeatureType: 3
+  Target: "Your Pok\xE9mon."
+  Trigger: 
+  FeatureEffect: "For 1 encounter the target gains the Ability Speed Boost. If your
+    chosen Stat is not Speed, replace the Ability\u2019s name with Attack Boost, Special
+    Attack Boost, Defense Boost or Special Defense Boost appropriately. Also if your
+    chosen Stat is not Speed, replace the word Speed in Speed Boost\u2019s effect
+    with Attack, Special Attack, Defense or Special Defense appropriately."
+  FeatureClass: 4

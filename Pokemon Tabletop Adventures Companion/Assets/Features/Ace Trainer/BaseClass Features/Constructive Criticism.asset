@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Constructive Criticism
+  m_EditorClassIdentifier: 
+  FeatureID: 107
+  FeatureConditions:
+  - {fileID: 11400000, guid: 24fa1ea3fa570bc4999e8dce6a5d60bb, type: 2}
+  - {fileID: 11400000, guid: e5b67689e145a7f40b8e85511b339f66, type: 2}
+  FeatureTiming: 17
+  FeatureType: 3
+  Target: "Your Pok\xE9mon that missed all targets with a move on its previous turn."
+  Trigger: 
+  FeatureEffect: "Every 10 levels gained, you may perform this Feature another time
+    per day.\nYour Pok\xE9mon needs to roll -3 on accuracy checks for the remainder
+    of the encounter."
+  FeatureClass: 1

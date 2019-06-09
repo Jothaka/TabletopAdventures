@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Field Scout
+  m_EditorClassIdentifier: 
+  FeatureID: 155
+  FeatureConditions:
+  - {fileID: 11400000, guid: 0014ca6b663d117468b5a54b447827dd, type: 2}
+  FeatureTiming: 17
+  FeatureType: 3
+  Target: "Your Pok\xE9mon"
+  Trigger: 
+  FeatureEffect: 'Every 5 levels gained, you may perform this Feature another time
+    per day.
+
+    On its next turn, the target may use the move Rapid Spin as if it was on their
+    Move List, and deals additional damage equal to your ATK modifier.'
+  FeatureClass: 5

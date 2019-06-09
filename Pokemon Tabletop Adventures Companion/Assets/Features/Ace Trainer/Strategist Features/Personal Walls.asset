@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Personal Walls
+  m_EditorClassIdentifier: 
+  FeatureID: 162
+  FeatureConditions:
+  - {fileID: 11400000, guid: 069b2683c6bfb664c88257e9e55626f2, type: 2}
+  FeatureTiming: 9
+  FeatureType: 3
+  Target: 
+  Trigger: "Your Pok\xE9mon uses a Move with the Wall Keyword."
+  FeatureEffect: "Every 5 levels gained, you may perform this Feature another time
+    per day.\nWhen using moves with the Wall keyword, instead of creating a Wall,
+    your Pok\xE9mon creates a Coat with the wall\u2019s effect. This effect has a
+    single target, and your Pok\xE9mon may target itself or others with this effect.
+    These Coats last until the end of the encounter, or until the target is recalled."
+  FeatureClass: 5

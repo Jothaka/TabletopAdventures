@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Wearher Vortex
+  m_EditorClassIdentifier: 
+  FeatureID: 166
+  FeatureConditions:
+  - {fileID: 11400000, guid: 7ce5b9ec9eb4eea419cf40cb0e7f8860, type: 2}
+  FeatureTiming: 9
+  FeatureType: 3
+  Target: 
+  Trigger: "Your Pok\xE9mon uses a move with the Weather keyword"
+  FeatureEffect: "Every 15 levels gained, you may perform this Feature another time
+    per day.\nThe target\u2019s Weather does not affect the entire field, and does
+    not replace any existing Weather conditions. Instead, your Pok\xE9mon targets
+    a space within 6 meters of itself. From that space originates a Blast with a radius
+    of up to 4 meters, though it may be smaller if you wish. Your Weather Move affects
+    only this area, and acts as normal within this area."
+  FeatureClass: 5

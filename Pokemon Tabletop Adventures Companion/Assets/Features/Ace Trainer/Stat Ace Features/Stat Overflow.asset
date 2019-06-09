@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Stat Overflow
+  m_EditorClassIdentifier: 
+  FeatureID: 149
+  FeatureConditions:
+  - {fileID: 11400000, guid: aa691c477e81e1c489db0166b2ca5555, type: 2}
+  - {fileID: 11400000, guid: d412aebd79ae9c047864652d91b57a6d, type: 2}
+  FeatureTiming: 17
+  FeatureType: 3
+  Target: "A Pok\xE9mon."
+  Trigger: 
+  FeatureEffect: "Your Pok\xE9mon loses half of its full HP. The Pok\xE9mon\u2019s
+    Stat, chosen for Stat Ace, is set to +6 Combat Stages. Your Pok\xE9mon cannot
+    use a Move during this round of encounter but may still shift."
+  FeatureClass: 4

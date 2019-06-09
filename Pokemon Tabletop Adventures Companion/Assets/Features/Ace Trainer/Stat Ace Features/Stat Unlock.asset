@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Stat Unlock
+  m_EditorClassIdentifier: 
+  FeatureID: 151
+  FeatureConditions:
+  - {fileID: 11400000, guid: 19b84adbdecc8b444b4814c1246d5434, type: 2}
+  FeatureTiming: 5
+  FeatureType: 0
+  Target: 
+  Trigger: 
+  FeatureEffect: "Your Pok\xE9mon ignore Base Relation, if they are adding to the
+    Stat chosen for Stat Ace."
+  FeatureClass: 4

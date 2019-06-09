@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Stat Ace
+  m_EditorClassIdentifier: 
+  FeatureID: 0
+  FeatureConditions:
+  - {fileID: 11400000, guid: 6644d768768e0894e89e98dd2d376d5d, type: 2}
+  FeatureTiming: 5
+  FeatureType: 0
+  Target: 
+  Trigger: 
+  FeatureEffect: 'Pick 1 Skill: Browbeat, Perception
+
+    Mechanic: When you take Stat Ace, choose Attack, Defense, Special Attack, Special
+    Defense, or Speed. This becomes your chosen stat for Stat Ace. You may take Stat
+    Ace multiple times, choosing different stats each time.'
+  FeatureClass: 4

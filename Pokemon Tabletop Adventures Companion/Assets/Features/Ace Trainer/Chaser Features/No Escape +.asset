@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: No Escape +
+  m_EditorClassIdentifier: 
+  FeatureID: 124
+  FeatureConditions:
+  - {fileID: 11400000, guid: d91f12ea9191dc242b8cc3cb0e840086, type: 2}
+  - {fileID: 11400000, guid: 3c46697a85e161b4b8bb69a103aae776, type: 2}
+  - {fileID: 11400000, guid: 2242b539a36c3bb4f8c34b36e0286b7f, type: 2}
+  - {fileID: 11400000, guid: c77bfcae86efeb543868395a5716e275, type: 2}
+  FeatureTiming: 6
+  FeatureType: 0
+  Target: Self.
+  Trigger: 
+  FeatureEffect: "When Pok\xE9mon or trainers try to flee during an encounter that
+    you are participating in and their move-ment speed is equal to or greater than
+    yours or your Pok\xE9mon\u2019s, they must roll 1d20 and add either their SPD
+    modifier or half their relevant Speed Skill. If they surpass 15 + your ATK modifier,
+    they successfully escape. Other-wise, they are unable to leave the encounter.
+    Someone using the Run Away ability must roll to escape as if they did not have
+    that ability. If the target successfully escapes, your movement speed as well
+    as the movement speed of all your Pok\xE9mon increases by 4 meters per round for
+    10 minutes if you try to pursue the escapee. Re-places No Escape."
+  FeatureClass: 2

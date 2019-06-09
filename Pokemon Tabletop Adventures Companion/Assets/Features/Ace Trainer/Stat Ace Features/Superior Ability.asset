@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Superior Ability
+  m_EditorClassIdentifier: 
+  FeatureID: 152
+  FeatureConditions:
+  - {fileID: 11400000, guid: 5619c4ec3b249cd458153b30ee31998e, type: 2}
+  - {fileID: 11400000, guid: d3cc3497a08ac9f418042b537cccdca8, type: 2}
+  FeatureTiming: 17
+  FeatureType: 3
+  Target: "Target Pok\xE9mon."
+  Trigger: 
+  FeatureEffect: "Every 8 levels gained, you may perform this Feature another time
+    per day.\nIf your active Pok\xE9mon\u2019s Stat, chosen for Stat Ace, is higher
+    than the target\u2019s particular stat, that Stat is lowered 1 Combat Stage."
+  FeatureClass: 4

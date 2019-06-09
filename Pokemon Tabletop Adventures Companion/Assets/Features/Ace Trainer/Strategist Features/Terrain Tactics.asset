@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Terrain Tactics
+  m_EditorClassIdentifier: 
+  FeatureID: 164
+  FeatureConditions:
+  - {fileID: 11400000, guid: 682ccecc2fa8bf9428d1e1c3a5d2e49d, type: 2}
+  FeatureTiming: 5
+  FeatureType: 0
+  Target: "Your Pok\xE9mon"
+  Trigger: 
+  FeatureEffect: "Your Pok\xE9mon with the Fountain, Freezer, Groundshaper, Materializer,
+    or Sprouter\r\nSkills may, instead of performing a Move on its turn, target up
+    to X square meters within 6 meters, turning the targeted spaces into Rough Terrain.
+    X is equal to half your ATK Modifier plus the Pok\xE9-mon\u2019s Power or Intelligence
+    Skill, whichever is higher. This ability may be limited by the targeted ter-rain;
+    for example, while a Pok\xE9mon with Fountain could turn dirt into mud to create
+    rough terrain, it may not be able to create rough terrain when fighting on concrete.\r\nVersatility
+    Strategist"
+  FeatureClass: 5

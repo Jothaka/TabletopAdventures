@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Talent Scout
+  m_EditorClassIdentifier: 
+  FeatureID: 153
+  FeatureConditions:
+  - {fileID: 11400000, guid: a54e8c906c304e844987108fff60efd9, type: 2}
+  FeatureTiming: 17
+  FeatureType: 3
+  Target: "A wild Pok\xE9mon."
+  Trigger: 
+  FeatureEffect: "Every 10 levels gained, you may perform this Feature another time
+    per day.\nRoll 1d20 and add your ATK modifier. If the total exceeds 15, that Pok\xE9mon\u2019s
+    Nature be-comes a random Nature that benefits your chosen Stat. If the total exceeds
+    25, that Pok\xE9mon has the Nature of your choice, that benefits your chosen stat."
+  FeatureClass: 4

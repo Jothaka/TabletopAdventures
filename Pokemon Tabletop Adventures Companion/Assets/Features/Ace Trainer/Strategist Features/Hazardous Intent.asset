@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Hazardous Intent
+  m_EditorClassIdentifier: 
+  FeatureID: 160
+  FeatureConditions:
+  - {fileID: 11400000, guid: ddcf7c7ce6958d5438dcc75963111d67, type: 2}
+  FeatureTiming: 5
+  FeatureType: 0
+  Target: 
+  Trigger: 
+  FeatureEffect: "When your Pok\xE9mon are placing Hazards, your Pok\xE9mon may place
+    an additional X meters of Hazards, where X is your ATK modifier. You may place
+    Hazards as you like within your range, and each meter of hazards need not be adja-cent
+    to another. If you put Hazards in a square occupied by an enemy, they immediately
+    suffer the effects of the Hazard upon Shifting."
+  FeatureClass: 5

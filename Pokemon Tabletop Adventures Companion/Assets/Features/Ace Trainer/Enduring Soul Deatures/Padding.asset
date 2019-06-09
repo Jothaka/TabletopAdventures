@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Padding
+  m_EditorClassIdentifier: 
+  FeatureID: 134
+  FeatureConditions:
+  - {fileID: 11400000, guid: c559f48ce6185444a80a6bfa8e162b27, type: 2}
+  - {fileID: 11400000, guid: f02b9b3affd62ab4f8cd65b3582394e2, type: 2}
+  FeatureTiming: 6
+  FeatureType: 0
+  Target: 
+  Trigger: 
+  FeatureEffect: Subtract your ATK modifier from the damage you would take in addition
+    to your Defense or Special Defense stat.
+  FeatureClass: 3

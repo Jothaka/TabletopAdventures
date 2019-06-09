@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: No Escape
+  m_EditorClassIdentifier: 
+  FeatureID: 116
+  FeatureConditions:
+  - {fileID: 11400000, guid: 15558c283bc532640a0864e8b51168f0, type: 2}
+  FeatureTiming: 6
+  FeatureType: 0
+  Target: Self
+  Trigger: 
+  FeatureEffect: "When Pok\xE9mon or trainers try to flee during an encounter that
+    you are participating in and their movement speed is equal to or greater than
+    yours or your Pok\xE9mon\u2019s, they must roll 1d20 and add either their SPD
+    modifier or half their relevant Speed Skill. If they surpass 10 + your ATK modifier,
+    they successfully escape. Otherwise, they are unable to leave the encounter. Someone
+    using the Run Away ability does not need to roll to escape regardless of their
+    movement speed."
+  FeatureClass: 2

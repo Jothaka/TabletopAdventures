@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Improved Attacks
+  m_EditorClassIdentifier: 
+  FeatureID: 102
+  FeatureConditions:
+  - {fileID: 11400000, guid: 4d3951fcddbf02049b50085eccd1b66e, type: 2}
+  FeatureTiming: 5
+  FeatureType: 0
+  Target: 
+  Trigger: "Your Pok\xE9mon\u2019s damage dealing attack hits."
+  FeatureEffect: When adding up damage dealt to the foe, add either half of your ATK
+    modifier or half of your SATK modifier before your foes subtracts their Defense
+    or Special Defense from the attack.
+  FeatureClass: 1

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Still Standing +
+  m_EditorClassIdentifier: 
+  FeatureID: 141
+  FeatureConditions:
+  - {fileID: 11400000, guid: 7e7e6bea27a7f08468beecbfb476f79d, type: 2}
+  - {fileID: 11400000, guid: 70ec9f52fd9b6b144a52e5f99cf14ba8, type: 2}
+  FeatureTiming: 6
+  FeatureType: 0
+  Target: 
+  Trigger: You are lowered to or below 0 HP.
+  FeatureEffect: "You may still issue commands to your Pok\xE9mon while unconscious.
+    You may still make a death savings throw when lowered to -100% HP. This Feature
+    replaces Still Standing."
+  FeatureClass: 3

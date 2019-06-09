@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Don't Stop
+  m_EditorClassIdentifier: 
+  FeatureID: 120
+  FeatureConditions:
+  - {fileID: 11400000, guid: 4e0b04a3ed961d64fa2ce532bd4ecf7f, type: 2}
+  - {fileID: 11400000, guid: 3f19a237b12709641b194529a842a427, type: 2}
+  FeatureTiming: 10
+  FeatureType: 3
+  Target: 
+  Trigger: "Your Pok\xE9mon knocks out a foe."
+  FeatureEffect: "Every 10 levels gained, you may perform this Feature another time
+    per day.\nAfter knocking out a foe, your Pok\xE9mon may make another Shift and
+    use another Move in that same turn. You may only activate this feature once per
+    Pok\xE9mon per encounter."
+  FeatureClass: 2

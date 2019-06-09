@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Press
+  m_EditorClassIdentifier: 
+  FeatureID: 112
+  FeatureConditions:
+  - {fileID: 11400000, guid: 5d98796295bb95c4fb9d527478409955, type: 2}
+  FeatureTiming: 18
+  FeatureType: 3
+  Target: "Your adjacent Pok\xE9mon."
+  Trigger: 
+  FeatureEffect: "Every 5 levels gained, you may perform this Feature another time
+    per day.\nDeal damage to your Pok\xE9mon equal to 1/5th of their total HP. Raise
+    any of their stats\u2019 Combat Stages 1 level. Using Press more than once per
+    Pok\xE9mon, per day will affect their loyalty."
+  FeatureClass: 1

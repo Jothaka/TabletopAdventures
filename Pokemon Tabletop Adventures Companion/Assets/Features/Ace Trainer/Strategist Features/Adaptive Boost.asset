@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Adaptive Boost
+  m_EditorClassIdentifier: 
+  FeatureID: 157
+  FeatureConditions:
+  - {fileID: 11400000, guid: de01e4ca43a927541a6066c48048fef1, type: 2}
+  FeatureTiming: 10
+  FeatureType: 3
+  Target: 
+  Trigger: "Your Pok\xE9mon uses a Self-Targeting move that raises Combat Stages."
+  FeatureEffect: "Every 10 levels gained, you may perform this Feature another time
+    per day.\nYour Pok\xE9mon gains an additional combat stage in any Stat in which
+    they didn\u2019t gain a combat stage that turn."
+  FeatureClass: 5

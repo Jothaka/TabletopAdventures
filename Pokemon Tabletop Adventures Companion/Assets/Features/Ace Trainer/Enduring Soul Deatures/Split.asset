@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Split
+  m_EditorClassIdentifier: 
+  FeatureID: 138
+  FeatureConditions:
+  - {fileID: 11400000, guid: 9414a111b25b53a4183904771ae07569, type: 2}
+  FeatureTiming: 34
+  FeatureType: 3
+  Target: 
+  Trigger: "One of your adjacent Pok\xE9mon is hit by a damaging Move."
+  FeatureEffect: "Every 7 levels gained, you may perform this Feature another time
+    per day.\nAfter applying Defense and Special Defense, you take half of the damage
+    that would have been done to your Pok\xE9mon. Your Pok\xE9mon takes half of the
+    damage it was supposed to take."
+  FeatureClass: 3

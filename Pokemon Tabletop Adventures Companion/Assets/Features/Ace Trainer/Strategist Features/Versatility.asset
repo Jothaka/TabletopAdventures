@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Versatility
+  m_EditorClassIdentifier: 
+  FeatureID: 165
+  FeatureConditions:
+  - {fileID: 11400000, guid: b8149e957b380a44b80d7d44bd7cc841, type: 2}
+  - {fileID: 11400000, guid: cb38d52213272644f94a53c4be49cba2, type: 2}
+  - {fileID: 11400000, guid: cbe24527f49b76d43aa84ba89e4a237e, type: 2}
+  FeatureTiming: 17
+  FeatureType: 3
+  Target: "Your Pok\xE9mon"
+  Trigger: 
+  FeatureEffect: The target may forfeit the use of a Battle Frequency Move to regain
+    use of a different Battle Frequency Move, or they may forfeit the use of a Center
+    Frequency Move to regain the use of a differ-ent Battle or Center Frequency Move
+    from their Move List.
+  FeatureClass: 5

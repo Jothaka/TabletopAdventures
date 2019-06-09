@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Helpful Priorities
+  m_EditorClassIdentifier: 
+  FeatureID: 159
+  FeatureConditions:
+  - {fileID: 11400000, guid: ae3f0b781e5a23f43839843637126507, type: 2}
+  - {fileID: 11400000, guid: e5b05621e05c525418519b5904676c6c, type: 2}
+  FeatureTiming: 9
+  FeatureType: 3
+  Target: 
+  Trigger: "Your Pok\xE9mon uses a Move that targets only other allies."
+  FeatureEffect: "Every 10 levels gained, you may perform this Feature another time
+    per day.\nYour Pok\xE9mon gains X HP, where X is your SATK Modifier doubled. Helpful
+    Priorities may be triggered on Burst moves like Heal Bell that target Self as
+    well, but only if they affect an Allied Pok\xE9mon."
+  FeatureClass: 5

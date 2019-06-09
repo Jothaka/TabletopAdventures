@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Hunting Techniques
+  m_EditorClassIdentifier: 
+  FeatureID: 122
+  FeatureConditions:
+  - {fileID: 11400000, guid: 0ac2638124cc9e846afd11692e6f7d0d, type: 2}
+  - {fileID: 11400000, guid: 6e1fe86debf989044b4d6b656c83a985, type: 2}
+  FeatureTiming: 66
+  FeatureType: 3
+  Target: "A Pok\xE9mon."
+  Trigger: 
+  FeatureEffect: "After ten minutes of work, roll 1d20 and add your ATK modifier.
+    If you roll 15 or higher, that Pok\xE9mon learns the Move Mean Look, Odor Sleuth,
+    or Pursuit. You must own a Pok\xE9mon that already knows whichever Move you are
+    tutoring onto the target."
+  FeatureClass: 2

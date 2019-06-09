@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Finish Them!
+  m_EditorClassIdentifier: 
+  FeatureID: 121
+  FeatureConditions:
+  - {fileID: 11400000, guid: 37a5c9f739b25064abbea2a2741c731b, type: 2}
+  - {fileID: 11400000, guid: 32992d9ed9321eb419ff99d492f3dc9d, type: 2}
+  FeatureTiming: 9
+  FeatureType: 3
+  Target: "Your Pok\xE9mon using a damaging Move."
+  Trigger: 
+  FeatureEffect: "Every 10 levels gained, you may perform this Feature another time
+    per day.\nWhen your Pok\xE9mon hits with Move with a Damage Dice Roll. If the
+    Move\u2019s target has less than 5% HP after dealing damage, the Pok\xE9mon faints."
+  FeatureClass: 2

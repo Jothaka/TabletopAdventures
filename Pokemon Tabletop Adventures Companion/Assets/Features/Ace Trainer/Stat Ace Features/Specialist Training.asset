@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517212b1d5f990b49836a4b86559e674, type: 3}
+  m_Name: Specialist Training
+  m_EditorClassIdentifier: 
+  FeatureID: 143
+  FeatureConditions:
+  - {fileID: 11400000, guid: fb0d6aa268f7a6448a4a5264be8254ea, type: 2}
+  FeatureTiming: 5
+  FeatureType: 0
+  Target: "The stat of choice for any of your Pok\xE9mon."
+  Trigger: 
+  FeatureEffect: "You may add half of your ATK or SATK modifier to the Base stat chosen
+    for Stat Ace to your Pok\xE9mon. If this changes which of the Pok\xE9mon\u2019s
+    base stats are the highest, maintain Base Relation appropriately."
+  FeatureClass: 4
