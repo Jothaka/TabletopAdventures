@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.TestTools;
 
 namespace Tests
 {
@@ -34,11 +31,11 @@ namespace Tests
             trainer.SetMockupFeatures();
 
             var pokedexCondition = ScriptableObject.CreateInstance<FeatureCondition>();
-            pokedexCondition.FeatureID = GeneralFeatureCollection.UsePokedex;
+            pokedexCondition.FeatureID = 0; // Use Pokedex
             Assert.That(pokedexCondition.TrainerMeetsCondition(trainer), Is.True);
 
             var chaserCondition = ScriptableObject.CreateInstance<FeatureCondition>();
-            chaserCondition.FeatureID = ChaserFeatureCollection.Chaser;
+            chaserCondition.FeatureID = 115; // Chaser
             Assert.That(chaserCondition.TrainerMeetsCondition(trainer), Is.False);
         }
 
@@ -51,7 +48,7 @@ namespace Tests
             trainer.SetMockupFeatures();
 
             var pokedexCondition = ScriptableObject.CreateInstance<FeatureCondition>();
-            pokedexCondition.FeatureID = GeneralFeatureCollection.UsePokedex;
+            pokedexCondition.FeatureID = 0; // Use Pokedex
 
             var badgeCondition = ScriptableObject.CreateInstance<TrainerAchievementCondition>();
             badgeCondition.DesiredAchievementType = Achievements.Badges;

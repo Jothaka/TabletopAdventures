@@ -12,14 +12,10 @@ public class FeatureEditor : Editor
     private Feature feature;
 
     #region SelectFeatureID
-    private Type[] featureCollections;
-    private string[] featureCollectionNames;
-
     private FeatureClasses selectedFeatureClass;
     private int selectedFeatureID;
 
-    private List<FieldInfo> selectedConstants;
-    private string[] selectedConstantNames;
+    private List<string> selectedFeatureNames;
     #endregion
 
     private ReorderableList reorderableConditionList;
@@ -33,14 +29,13 @@ public class FeatureEditor : Editor
 
     private void InitializeFeatureIDSelection()
     {
-        featureCollections = ReflectionUtility.GetAllSubTypes(typeof(FeatureCollection));
-        featureCollectionNames = ReflectionUtility.GetTypeNames(featureCollections);
         selectedFeatureClass = feature.FeatureClass;
 
-        selectedConstants = ReflectionUtility.GetConstants(FeatureCollection.FeatureClassToCollectionType(selectedFeatureClass));
-        selectedConstantNames = ReflectionUtility.GetFieldNames(selectedConstants);
-        var constantValues = ReflectionUtility.GetFieldConstantValues<int>(selectedConstants);
-        selectedFeatureID = constantValues.IndexOf(feature.FeatureID);
+        var classFeatures = FeatureCollection.GetClassFeatures(selectedFeatureClass);
+
+        selectedFeatureNames = classFeatures.Values.ToList();
+        var currentSelectedFeatureID = classFeatures[feature.FeatureID];
+        selectedFeatureID = selectedFeatureNames.IndexOf(currentSelectedFeatureID);
     }
 
     private void InitializeFeatureConditions()
@@ -67,22 +62,24 @@ public class FeatureEditor : Editor
     {
         FeatureClasses oldSelected = selectedFeatureClass;
 
-        selectedFeatureClass = (FeatureClasses)EditorGUILayout.EnumPopup("Feature Class", selectedFeatureClass); //EditorGUILayout.Popup("Feature Class", selectedFeatureClass, featureCollectionNames);
+        selectedFeatureClass = (FeatureClasses)EditorGUILayout.EnumPopup("Feature Class", selectedFeatureClass);
 
         if (oldSelected != selectedFeatureClass)
         {
-            selectedConstants = ReflectionUtility.GetConstants(FeatureCollection.FeatureClassToCollectionType(selectedFeatureClass));
-            selectedConstantNames = ReflectionUtility.GetFieldNames(selectedConstants);
+            var classFeatures = FeatureCollection.GetClassFeatures(selectedFeatureClass);
+            selectedFeatureNames = classFeatures.Values.ToList();
             feature.FeatureClass = selectedFeatureClass;
             EditorUtility.SetDirty(feature);
         }
 
         int oldFeatureID = selectedFeatureID;
-        selectedFeatureID = EditorGUILayout.Popup("Feature Name", selectedFeatureID, selectedConstantNames);
+        selectedFeatureID = EditorGUILayout.Popup("Feature Name", selectedFeatureID, selectedFeatureNames.ToArray());
 
         if (oldFeatureID != selectedFeatureID)
         {
-            feature.FeatureID = ReflectionUtility.GetConstantValue<int>(selectedConstants[selectedFeatureID]);
+            var featureName = selectedFeatureNames[selectedFeatureID];
+            var classFeatures = FeatureCollection.GetClassFeatures(selectedFeatureClass);
+            feature.FeatureID = classFeatures.FirstOrDefault(x => x.Value == featureName).Key;
             EditorUtility.SetDirty(feature);
         }
 
@@ -127,7 +124,7 @@ public class FeatureEditor : Editor
         Type conditionType = selectedType as Type;
         if (conditionType != null)
         {
-            Condition newCondition = ScriptableObjectUtility.CreateAssetInSubfolder(selectedConstantNames[selectedFeatureID] + "_Conditions", conditionType, feature.FeatureConditions.Count) as Condition;
+            Condition newCondition = ScriptableObjectUtility.CreateAssetInSubfolder(selectedFeatureNames[selectedFeatureID] + "_Conditions", conditionType, feature.FeatureConditions.Count) as Condition;
 
             if (newCondition != null)
             {

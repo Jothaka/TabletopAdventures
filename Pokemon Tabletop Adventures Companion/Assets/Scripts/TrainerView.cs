@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class TrainerView : MonoBehaviour
@@ -24,6 +26,23 @@ public class TrainerView : MonoBehaviour
     public Text ModifierSATK;
     public Text ModifierSDEF;
     public Text ModifierSPD;
+
+    [Header("Feature Display references")]
+    public Text FeatureEffectContent;
+    public List<FeatureButton> FeatureButtons;
+
+    private void Start()
+    {
+        //DEBUG ONLY!
+        foreach (var button in FeatureButtons)
+            button.OnFeatureSelected += OnFeatureSelected;
+        //
+    }
+
+    private void OnFeatureSelected(string obj)
+    {
+        FeatureEffectContent.text = obj;
+    }
 
     public void ToggleButtons(bool active)
     {

@@ -27,28 +27,28 @@ public class Trainer : MonoBehaviour
     public void SetMockupFeatures()
     {
         Feature pokedexFeature = ScriptableObject.CreateInstance<Feature>();
-        pokedexFeature.FeatureID = GeneralFeatureCollection.UsePokedex;
+        pokedexFeature.FeatureID = 0; //Use Pokedex
         pokedexFeature.FeatureClass = FeatureClasses.General;
         pokedexFeature.FeatureType = FeatureTypes.AtWill;
 
         UnlockedFeatures.Add(pokedexFeature);
 
         Feature aceAffirmationFeature = ScriptableObject.CreateInstance<Feature>();
-        aceAffirmationFeature.FeatureID = AceFeatureCollection.Affirmation;
+        aceAffirmationFeature.FeatureID = 103; //Affirmation
         aceAffirmationFeature.FeatureClass = FeatureClasses.Ace;
         aceAffirmationFeature.FeatureType = FeatureTypes.Static;
 
         UnlockedFeatures.Add(aceAffirmationFeature);
 
         Feature aceBeastMasterFeature = ScriptableObject.CreateInstance<Feature>();
-        aceBeastMasterFeature.FeatureID = AceFeatureCollection.BeastMaster;
+        aceBeastMasterFeature.FeatureID = 104; //Beast Master
         aceBeastMasterFeature.FeatureClass = FeatureClasses.Ace;
         aceBeastMasterFeature.FeatureType = FeatureTypes.Static;
 
         UnlockedFeatures.Add(aceBeastMasterFeature);
 
         Feature aceClassFeature = ScriptableObject.CreateInstance<Feature>();
-        aceClassFeature.FeatureID = AceFeatureCollection.AceTrainer;
+        aceClassFeature.FeatureID = 100; //Ace Trainer
         aceClassFeature.FeatureClass = FeatureClasses.Ace;
         aceClassFeature.FeatureType = FeatureTypes.Class;
 
