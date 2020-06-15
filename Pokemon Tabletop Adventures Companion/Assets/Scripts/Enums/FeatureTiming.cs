@@ -2,6 +2,7 @@
 
 #pragma warning disable CS0612 
 
+//marking base enum values obsolete to make them unselectable in UnityEditor
 [Flags]
 public enum FeatureTiming
 {

@@ -15,22 +15,22 @@ public class TrainerStatCondition : Condition
                 statValue = trainer.Level;
                 break;
             case Stats.HP:
-                statValue = trainer.HP;
+                statValue = trainer.TrainerStats.HP;
                 break;
             case Stats.ATK:
-                statValue = trainer.ATK;
+                statValue = trainer.TrainerStats.ATK;
                 break;
             case Stats.DEF:
-                statValue = trainer.DEF;
+                statValue = trainer.TrainerStats.DEF;
                 break;
             case Stats.SATK:
-                statValue = trainer.SATK;
+                statValue = trainer.TrainerStats.SATK;
                 break;
             case Stats.SDEF:
-                statValue = trainer.SDEF;
+                statValue = trainer.TrainerStats.SDEF;
                 break;
             case Stats.SPD:
-                statValue = trainer.SPD;
+                statValue = trainer.TrainerStats.SPD;
                 break;
             default:
                 break;

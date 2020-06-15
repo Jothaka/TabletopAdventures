@@ -7,12 +7,8 @@ public class Trainer : MonoBehaviour
     public int Level = 0;
     public int AvailableStatPoints = 30;
     public int AvailableFeaturePoints = 0;
-    public int HP = 6;
-    public int ATK = 6;
-    public int DEF = 6;
-    public int SATK = 6;
-    public int SDEF = 6;
-    public int SPD = 6;
+
+    public Status TrainerStats;
 
     [Header("Achievements")]
     public int Badges = 0;
@@ -22,7 +18,17 @@ public class Trainer : MonoBehaviour
     [Header("Features")]
     public List<Feature> UnlockedFeatures = new List<Feature>();
 
-    public int Health { get { return (HP * 4) + (Level * 4); } }
+    public int Health { get { return (TrainerStats.HP * 4) + (Level * 4); } }
+
+    private void Start()
+    {
+        TrainerStats.HP = 6;
+        TrainerStats.ATK = 6;
+        TrainerStats.DEF = 6;
+        TrainerStats.SATK = 6;
+        TrainerStats.SDEF = 6;
+        TrainerStats.SPD = 6;
+    }
 
     public void SetMockupFeatures()
     {
@@ -58,11 +64,11 @@ public class Trainer : MonoBehaviour
     public void SetMockupStats()
     {
         Level = 0;
-        HP = 11;
-        ATK = 11;
-        DEF = 11;
-        SATK = 11;
-        SDEF = 8;
-        SPD = 14;
+        TrainerStats.HP = 11;
+        TrainerStats.ATK = 11;
+        TrainerStats.DEF = 11;
+        TrainerStats.SATK = 11;
+        TrainerStats.SDEF = 8;
+        TrainerStats.SPD = 14;
     }
 }

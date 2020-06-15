@@ -53,12 +53,12 @@ public class TrainerView : MonoBehaviour
     public void UpdateStatFields()
     {
         Level.text = TrainerModell.Level.ToString();
-        HP.text = TrainerModell.HP.ToString();
-        ATK.text = TrainerModell.ATK.ToString();
-        DEF.text = TrainerModell.DEF.ToString();
-        SATK.text = TrainerModell.SATK.ToString();
-        SDEF.text = TrainerModell.SDEF.ToString();
-        SPD.text = TrainerModell.SPD.ToString();
+        HP.text = TrainerModell.TrainerStats.HP.ToString();
+        ATK.text = TrainerModell.TrainerStats.ATK.ToString();
+        DEF.text = TrainerModell.TrainerStats.DEF.ToString();
+        SATK.text = TrainerModell.TrainerStats.SATK.ToString();
+        SDEF.text = TrainerModell.TrainerStats.SDEF.ToString();
+        SPD.text = TrainerModell.TrainerStats.SPD.ToString();
         AvailableStatPoints.text = TrainerModell.AvailableStatPoints.ToString();
     }
 

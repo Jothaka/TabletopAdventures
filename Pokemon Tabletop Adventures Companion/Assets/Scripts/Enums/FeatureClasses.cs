@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-using System.Collections;
-
-public enum FeatureClasses
+﻿public enum FeatureClasses
 {
     General,
     Ace,

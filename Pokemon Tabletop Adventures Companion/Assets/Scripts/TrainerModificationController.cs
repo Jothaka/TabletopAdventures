@@ -27,22 +27,22 @@ public class TrainerModificationController : MonoBehaviour
                     View.ToggleButtons(true);
                 break;
             case Stats.HP:
-                Modell.HP++;
+                Modell.TrainerStats.HP++;
                 break;
             case Stats.ATK:
-                Modell.ATK++;
+                Modell.TrainerStats.ATK++;
                 break;
             case Stats.DEF:
-                Modell.DEF++;
+                Modell.TrainerStats.DEF++;
                 break;
             case Stats.SATK:
-                Modell.SATK++;
+                Modell.TrainerStats.SATK++;
                 break;
             case Stats.SDEF:
-                Modell.SDEF++;
+                Modell.TrainerStats.SDEF++;
                 break;
             case Stats.SPD:
-                Modell.SPD++;
+                Modell.TrainerStats.SPD++;
                 break;
             default:
                 break;
@@ -73,22 +73,22 @@ public class TrainerModificationController : MonoBehaviour
         switch (statType)
         {
             case Stats.HP:
-                newModifier = CalculateModifier(Modell.HP);
+                newModifier = CalculateModifier(Modell.TrainerStats.HP);
                 break;
             case Stats.ATK:
-                newModifier = CalculateModifier(Modell.ATK);
+                newModifier = CalculateModifier(Modell.TrainerStats.ATK);
                 break;
             case Stats.DEF:
-                newModifier = CalculateModifier(Modell.DEF);
+                newModifier = CalculateModifier(Modell.TrainerStats.DEF);
                 break;
             case Stats.SATK:
-                newModifier = CalculateModifier(Modell.SATK);
+                newModifier = CalculateModifier(Modell.TrainerStats.SATK);
                 break;
             case Stats.SDEF:
-                newModifier = CalculateModifier(Modell.SDEF);
+                newModifier = CalculateModifier(Modell.TrainerStats.SDEF);
                 break;
             case Stats.SPD:
-                newModifier = CalculateModifier(Modell.SPD);
+                newModifier = CalculateModifier(Modell.TrainerStats.SPD);
                 break;
             default:
                 break;
